@@ -955,55 +955,6 @@ namespace TileTool
                 }
 
 
-
-
-                /*for (int r = 0; r < dsd.Length; r++) //f
-                {
-                    float x = 0;
-                    float y = 0;
-                    float z = 0;
-                    float w = 0;
-                    if (dsd[r] == 1)
-                    {              
-                        x+=r + 1;
-                        isQuad = true;
-                        r++;                     
-                    }
-                    if(isQuad && dsd[r] == 0)
-                    {
-                        y += r + 1;
-                        isQuadInsequence = true;
-                        r++;
-                    }
-                    if(isQuad && isQuadInsequence && dsd[r] == 0)
-                    {    
-                        z += r + 1;
-                        r++;
-                    }
-                    if(dsd[r] == 1 && isQuad && isQuadInsequence)
-                    {
-                        w += r + 1;
-                        if ((r +1) == dsd.Length)
-                        {
-                            max4 += Math.Max(Math.Max(Math.Max(x, y), z), w);
-                        }
-
-                        if(errorAtline.Contains(x) || errorAtline.Contains(y) || errorAtline.Contains(z) || errorAtline.Contains(w))
-                        {
-                            x = 0f - UVcounter;
-                            y = 0f - UVcounter;
-                            z = 0f - UVcounter;
-                            w = 0f - UVcounter;
-                        }
-                        string UVout = "f " + (x + UVcounter) + "/" + (vtlist_ar[(r - 2)] + max5) + " " + (y + UVcounter) + "/" + (vtlist_ar[(r - 1)] + max5) + " " + (z + UVcounter) + "/" + (vtlist_ar[(r - 0)] + max5) + " " + (w + UVcounter) + "/" + (vtlist_ar[(r + 1)] + max5);
-                        Console.WriteLine(UVout);
-                        sw.WriteLine(UVout);
-                        isQuad = false;
-                        isQuadInsequence= false;
-                        
-                    }
-
-                }*/
         
                 max5 += dsd.Length;
             }
