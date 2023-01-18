@@ -940,10 +940,10 @@ namespace TileTool
 
                         if (errorAtline.Contains(x) || errorAtline.Contains(y) || errorAtline.Contains(z) || errorAtline.Contains(w))
                         {
-                            x = 0f - UVcounter;
-                            y = 0f - UVcounter;
-                            z = 0f - UVcounter;
-                            w = 0f - UVcounter;
+                            x = 1f - UVcounter;
+                            y = 1f - UVcounter;
+                            z = 1f - UVcounter;
+                            w = 1f - UVcounter;
                         }
                         string UVout = "f " + (x + UVcounter) + "/" + (vtlist_ar[(r - 2)] + max5) + " " + (y + UVcounter) + "/" + (vtlist_ar[(r - 1)] + max5) + " " + (z + UVcounter) + "/" + (vtlist_ar[(r - 0)] + max5) + " " + (w + UVcounter) + "/" + (vtlist_ar[(r + 1)] + max5);
 
